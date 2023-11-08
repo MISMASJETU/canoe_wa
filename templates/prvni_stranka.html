@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/static/mujstyl.css" />
+<title>Úvodní stránka</title>
+
+<body>
+    <div id="top"></div>
+    <div class="adjancent">
+        <img src="/static/img/logo.png" class="logo">
+        <h1 style="font-size: 35px;">Rozsazení v lodích na vodáckém kurzu 2023 SPŠE Ječná</h1>
+    </div>
+    <br>
+    <h2>Seznam ucastniku</h2>
+    {% for ucastnik in ucastnici %}
+      <p>{{ ucastnik[0] }} {{ ucastnik[1] }} {{ ucastnik[2] }}</p>
+    {% endfor %}
+    <br>
+    <a href="/registrace"><button type="button" class="orange_button">Registrovat se</button></a>
+
+
+</body>
+</html>
